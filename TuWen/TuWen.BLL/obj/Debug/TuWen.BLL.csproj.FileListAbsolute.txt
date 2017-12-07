@@ -1,0 +1,9 @@
+c:\users\jjw\documents\visual studio 2010\Projects\TuWen\TuWen.BLL\bin\Debug\TuWen.BLL.dll
+c:\users\jjw\documents\visual studio 2010\Projects\TuWen\TuWen.BLL\bin\Debug\TuWen.BLL.pdb
+c:\users\jjw\documents\visual studio 2010\Projects\TuWen\TuWen.BLL\bin\Debug\TuWen.DAL.dll
+c:\users\jjw\documents\visual studio 2010\Projects\TuWen\TuWen.BLL\bin\Debug\TuWen.Model.dll
+c:\users\jjw\documents\visual studio 2010\Projects\TuWen\TuWen.BLL\bin\Debug\TuWen.DAL.pdb
+c:\users\jjw\documents\visual studio 2010\Projects\TuWen\TuWen.BLL\bin\Debug\TuWen.Model.pdb
+c:\users\jjw\documents\visual studio 2010\Projects\TuWen\TuWen.BLL\obj\Debug\TuWen.BLL.csprojResolveAssemblyReference.cache
+c:\users\jjw\documents\visual studio 2010\Projects\TuWen\TuWen.BLL\obj\Debug\TuWen.BLL.dll
+c:\users\jjw\documents\visual studio 2010\Projects\TuWen\TuWen.BLL\obj\Debug\TuWen.BLL.pdb

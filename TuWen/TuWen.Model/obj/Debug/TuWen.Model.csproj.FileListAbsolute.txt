@@ -1,0 +1,4 @@
+c:\users\jjw\documents\visual studio 2010\Projects\TuWen\TuWen.Model\bin\Debug\TuWen.Model.dll
+c:\users\jjw\documents\visual studio 2010\Projects\TuWen\TuWen.Model\bin\Debug\TuWen.Model.pdb
+c:\users\jjw\documents\visual studio 2010\Projects\TuWen\TuWen.Model\obj\Debug\TuWen.Model.dll
+c:\users\jjw\documents\visual studio 2010\Projects\TuWen\TuWen.Model\obj\Debug\TuWen.Model.pdb

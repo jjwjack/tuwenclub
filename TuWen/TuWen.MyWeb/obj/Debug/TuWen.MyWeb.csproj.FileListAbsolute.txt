@@ -1,0 +1,4 @@
+c:\users\jjw\documents\visual studio 2010\Projects\TuWen\TuWen.MyWeb\bin\TuWen.MyWeb.dll
+c:\users\jjw\documents\visual studio 2010\Projects\TuWen\TuWen.MyWeb\bin\TuWen.MyWeb.pdb
+c:\users\jjw\documents\visual studio 2010\Projects\TuWen\TuWen.MyWeb\obj\Debug\TuWen.MyWeb.dll
+c:\users\jjw\documents\visual studio 2010\Projects\TuWen\TuWen.MyWeb\obj\Debug\TuWen.MyWeb.pdb
