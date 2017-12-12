@@ -7,9 +7,12 @@
 </head>
 <body>
     <a href="Add.aspx">添加用户</a>
-    <form id="form1" runat="server">
-    <table border="1" cellpadding="0" cellspacing="0">
+    <%--    <form id="form1" runat="server">--%>
+    <table border="1" cellpadding="1" cellspacing="1">
         <tr>
+            <th>
+                ID
+            </th>
             <th>
                 用户名
             </th>
@@ -38,14 +41,17 @@
                 年级
             </th>
             <th>
+                注册时间
+            </th>
+            <th>
                 修改
             </th>
             <th>
                 删除
             </th>
         </tr>
-        <% %>
+        <%=sb.ToString() %>
     </table>
-    </form>
+    <%--    </form>--%>
 </body>
 </html>

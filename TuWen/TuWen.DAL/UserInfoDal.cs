@@ -47,7 +47,7 @@ namespace TuWen.DAL
         //增
         public int Insert(UserInfo userInfo)
         {
-            string sql = "INSERT INTO userList(userName, passWord, tel, qq, province, city, school, grade, regtime) VALUES(@userName, @passWord, @tel, @qq, @province, @city, @school, @grade, @regtime)";
+            string sql = "INSERT INTO userInfo(userName, passWord, tel, qq, province, city, school, grade, regtime) VALUES(@userName, @passWord, @tel, @qq, @province, @city, @school, @grade, @regtime)";
             SqlParameter[] ps = {
                                       new SqlParameter("@userName",SqlDbType.NVarChar,32),
                                       new SqlParameter("@passWord",SqlDbType.NVarChar,32),
@@ -57,17 +57,18 @@ namespace TuWen.DAL
                                       new SqlParameter("@city",SqlDbType.NVarChar,32),
                                       new SqlParameter("@school",SqlDbType.NVarChar,32),
                                       new SqlParameter("@grade",SqlDbType.NVarChar,32),
-                                      new SqlParameter("@regtime",SqlDbType.NVarChar,32)
+                                      new SqlParameter("@regtime",SqlDbType.DateTime,32)
                                        };
             ps[0].Value = userInfo.UserName;
             ps[1].Value = userInfo.PassWord;
             ps[2].Value = userInfo.Tel;
             ps[3].Value = userInfo.QQ;
             ps[4].Value = userInfo.Province;
-            ps[5].Value = userInfo.City;
-            ps[6].Value = userInfo.School;
-            ps[7].Value = userInfo.Grade;
-            ps[8].Value = userInfo.Regtime;
+            ps[5].Value = userInfo.District;
+            ps[6].Value = userInfo.City;
+            ps[7].Value = userInfo.School;
+            ps[8].Value = userInfo.Grade;
+            ps[9].Value = DateTime.Now;
             return SqlHelper.ExecuteNonQuery(sql, CommandType.Text, ps);
         }
         //删

@@ -16,7 +16,7 @@ namespace TuWen.BLL
             return userInfoDal.GetUserList();
         }
         //增
-        private int InsertEntity(UserInfo userInfo)
+        public int InsertEntity(UserInfo userInfo)
         {
             return userInfoDal.Insert(userInfo);
         }

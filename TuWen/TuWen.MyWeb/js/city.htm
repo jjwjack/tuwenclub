@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <select id="province">
+        <option value="value">选择省</option>
+        <!--<option value="value">北京</option>
+        <option value="value">山东</option>-->
+    </select>
+    <select id="city">
+        <option value="value">选择市</option>
+    </select>
+    <select id="district">
+        <option value="value">选择区</option>
+    </select>
+</body>
+<script src="jquery1.11.3.js" type="text/javascript"></script>
+<script src="city.js" type="text/javascript"></script>
+<script type="text/javascript">
+    //获取省、市、区select节点
+    var province = $("#province");
+    var city = $("#city");
+    var district = $("#district");
+    //提前定义动态变量市、区
+    var cities;
+    var districts;
+    //定义省、市下标
+    var p_num;
+    var c_num;
+    //添加省
+    for (var i = 0; i < provinces.length; i++) {
+        province.append("<option value='value'>" + provinces[i] + "</option>");
+    }
+    //选择省后，添加市（如果点“选择省”，清空市区）（如果没查到对应的市，默认填充为“选择市”）
+    province.change(function () {
+        //先清空市、区
+        city.empty();
+        district.empty();
+        city.append("<option value='value'>选择市</option>");
+        district.append("<option value='value'>选择区</option>");
+        var p = province.find("option:selected").text();
+        if (p == "选择省") {
+            city.empty();
+            city.append("<option value='value'>选择市</option>");
+        } else {
+            //查找选择的省的下标
+            for (var i in provinces) {
+                if (provinces[i] == p) {
+                    p_num = i;
+                }
+            }
+            //网上一堆说eval不行的，不安全的，有很多替代方法的。麻痹找了一顿也没找到，我就用eval了！
+            //动态查找市的变量名，显示
+            cities = eval("p" + p_num);
+            for (var i in cities) {
+                city.append("<option value='value'>" + cities[i] + "</option>");
+            }
+        }
+    }
+    );
+    //选择市后，添加区（如果点“选择市”，清空区）（如果没查到对应的区，默认填充为“选择区”）
+    city.change(function () {
+        var c = city.find("option:selected").text();
+        if (c == "选择市") {
+            district.empty();
+            district.append("<option value='value'>选择区</option>");
+        } else if ($.inArray(c, cities)) {
+            //jquery的inarray方法，判断某个元素是不是在数组中
+            district.empty();
+            district.append("<option value='value'>选择区</option>");
+        } else {
+            for (var i in cities) {
+                if (c == cities[i]) {
+                    c_num = i;
+                }
+            }
+            //            alert("p" + p_num + "_" + c_num);
+            districts = eval("p" + p_num + "_" + c_num);
+            for (var i in districts) {
+                district.append("<option value='value'>" + districts[i] + "</option>");
+            }
+        }
+
+    });
+</script>
+</html>

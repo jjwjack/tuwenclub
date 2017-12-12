@@ -2,3 +2,14 @@ c:\users\jjw\documents\visual studio 2010\Projects\TuWen\TuWen.MyWeb\bin\TuWen.M
 c:\users\jjw\documents\visual studio 2010\Projects\TuWen\TuWen.MyWeb\bin\TuWen.MyWeb.pdb
 c:\users\jjw\documents\visual studio 2010\Projects\TuWen\TuWen.MyWeb\obj\Debug\TuWen.MyWeb.dll
 c:\users\jjw\documents\visual studio 2010\Projects\TuWen\TuWen.MyWeb\obj\Debug\TuWen.MyWeb.pdb
+E:\MySVN\tuwen\trunk\TuWen\TuWen.MyWeb\bin\TuWen.MyWeb.dll
+E:\MySVN\tuwen\trunk\TuWen\TuWen.MyWeb\bin\TuWen.MyWeb.pdb
+E:\MySVN\tuwen\trunk\TuWen\TuWen.MyWeb\bin\TuWen.BLL.dll
+E:\MySVN\tuwen\trunk\TuWen\TuWen.MyWeb\bin\TuWen.Model.dll
+E:\MySVN\tuwen\trunk\TuWen\TuWen.MyWeb\bin\TuWen.DAL.dll
+E:\MySVN\tuwen\trunk\TuWen\TuWen.MyWeb\bin\TuWen.BLL.pdb
+E:\MySVN\tuwen\trunk\TuWen\TuWen.MyWeb\bin\TuWen.Model.pdb
+E:\MySVN\tuwen\trunk\TuWen\TuWen.MyWeb\bin\TuWen.DAL.pdb
+E:\MySVN\tuwen\trunk\TuWen\TuWen.MyWeb\obj\Debug\TuWen.MyWeb.csprojResolveAssemblyReference.cache
+E:\MySVN\tuwen\trunk\TuWen\TuWen.MyWeb\obj\Debug\TuWen.MyWeb.dll
+E:\MySVN\tuwen\trunk\TuWen\TuWen.MyWeb\obj\Debug\TuWen.MyWeb.pdb
