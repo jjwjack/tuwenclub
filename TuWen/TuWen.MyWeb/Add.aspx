@@ -3,6 +3,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
     <title></title>
 </head>
 <body>
@@ -45,25 +46,8 @@
                 省
             </td>
             <td>
-                <select>
-                    <option value="value">北京</option>
-                    <option value="value">上海</option>
-                    <option value="value">广州</option>
+                <select id="cmbProvince" name="cmbProvince">
                 </select>
-                <%--<input type="text" name="province" value="" />--%>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                区
-            </td>
-            <td>
-                <select>
-                    <option value="value">海淀区</option>
-                    <option value="value">朝阳区</option>
-                    <option value="value">昌平区</option>
-                </select>
-                <input type="text" name="district" value="" />
             </td>
         </tr>
         <tr>
@@ -71,7 +55,17 @@
                 市
             </td>
             <td>
-                <input type="text" name="city" value="" />
+                <select id="cmbCity" name="cmbCity">
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                区/县
+            </td>
+            <td>
+                <select id="cmbArea" name="cmbArea">
+                </select>
             </td>
         </tr>
         <tr>
@@ -98,4 +92,8 @@
     </table>
     </form>
 </body>
+<script src="js/jsAddress.js" type="text/javascript"></script>
+<script type="text/javascript">
+    addressInit('cmbProvince', 'cmbCity', 'cmbArea');  
+</script>
 </html>
